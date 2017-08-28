@@ -1,5 +1,5 @@
 /*global describe, it*/
-
+var Loops = require("../loops.js")
 const chai = require('chai')
 const fs = require('fs')
 const jsdom = require('mocha-jsdom')
