@@ -10,10 +10,4 @@ else {
 }
 return console.log(j)
 }
-function whileLoop(n) {
-  var a = 5
-  while (a>=0) {
-  console.log(a--)
-}
-return '"done"'
-}
+
