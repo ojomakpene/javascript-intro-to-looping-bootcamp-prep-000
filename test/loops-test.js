@@ -42,26 +42,5 @@ describe('loops', () => {
     })
   })
 
-  describe('whileLoop(n)', () => {
-    it('counts down from n to 0', () => {
-      const spy = chai.spy.on(console, 'log')
-      const n = Math.floor(Math.random() * 100)
 
-      expect(whileLoop(n)).to.equal('done')
-      expect(spy).to.have.been.called.exactly(n)
-
-      console.log.reset()
-    })
-  })
-
-  describe('doWhileLoop(array)', () => {
-    it('removes elements from `array` until `array` is empty or until `maybeTrue()` returns `false`', () => {
-      const [array, t] = makeArray()
-      const l = array.length
-
-      const newArray = doWhileLoop(array)
-
-      expect(newArray).to.have.length.of.at.most(l - 1)
-    })
-  })
 })
